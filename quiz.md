@@ -20,6 +20,9 @@ b2ed3
 
 4. What changed between commit e474c and 82045?
 
+gross_sort = lambda x : x["Gross"] changed to gross_sort = lambda x : int(x["Gross"])
+top_five = rows[:-5:-1] changed to  top_five = rows[:-6:-1]
+
 ## Predicting merges
 
 Assume at the start of each of these three questions that your
