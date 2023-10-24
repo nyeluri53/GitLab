@@ -43,6 +43,8 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
+Process_movie_data.py was changed. Fast-forward was the strategy used to merge. The test branch changes and reflects that process_movie_data.py changes. 
+
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -50,6 +52,7 @@ What branches would change, and how?
 git checkout top_ten
 git merge test
 ```
+Renamed quiz.md to answers.md. 'Ort' was the strategy that was used to merge. The Top_ten branch was changed and reflects that quiz.md was renamed to answers.md in the test branch.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -58,3 +61,4 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+The test branch changed. Specifically, the changes in top_ten and top_N affected the same file, so both annotations were reflected in the test branch. This results in a merge conflict! 
